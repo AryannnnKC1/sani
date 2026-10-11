@@ -1,0 +1,10 @@
+- generic [ref=f2e1]:
+  - text: Swipe to explore
+  - region [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - heading "And that's only a little piece of our story... 💗" [active] [level=2] [ref=f2e4]
+      - paragraph [ref=f2e5]:
+        - generic [ref=f2e6]: Happy Birthday, Kritika. I hope this new year of your life brings you so much happiness, countless reasons to smile, and everything your heart has been wishing for. Thank you for being you and for making so many moments feel special. You deserve all the love, happiness, and beautiful things this world has to offer. You have been the best supporter I have ever had in my life. You have stood beside me, believed in me, listened to me, and made me feel like I never have to face anything alone. I hope you know how deeply grateful I am for you and for every little thing you do. I am so sure that you are the person I want to marry. When I picture my future, you are the only girl I can ever see with these eyes. I want to make many more memories with you, grow with you, choose you every day, and build a beautiful life together. Happy Birthdayyyy, my favorite person. You complete me and I love you 3000<3
+        - text: Happy Birthday, Kritika. I hope this new year
+      - button "Walk through our memories again 💗"
+      - text: ♥

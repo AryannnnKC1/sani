@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - region [ref=e2]:
+    - generic [aria-hidden]:
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+      - generic: ♥
+    - generic [ref=e3]:
+      - heading "Happy Birthdayyyy, Kritika! 💗" [level=1] [ref=e4]:
+        - generic [aria-hidden] [ref=e5]: Happy
+        - generic [aria-hidden] [ref=e6]: Birthdayyyy,
+        - generic [aria-hidden] [ref=e7]: Kritika!
+        - generic [aria-hidden] [ref=e8]: 💗
+      - paragraph [ref=e9]: I made a little something for you... Are you ready to see what's inside?
+      - generic [ref=e10]:
+        - button "YESSS, SHOW ME! 💖" [ref=e11] [cursor=pointer]
+        - button "Wait, I'm nervous 🥹" [ref=e12] [cursor=pointer]
+      - paragraph [ref=e13]: Something special is waiting inside.
+  - text: Swipe to explore ♥
