@@ -128,7 +128,6 @@ h1 .w{display:inline-block;opacity:0;filter:blur(10px);transform:translateY(.25e
   <div class="viewport" id="vp"><div class="track" id="track"></div></div>
   <div class="controls">
     <button class="circ" id="prev" aria-label="Previous memory"><span class="arrow" aria-hidden="true">‹</span><span>Back</span></button>
-    <button class="circ" id="play" aria-label="Pause slideshow">❚❚</button>
     <button class="circ music" id="music" aria-label="Pause music" title="Pause music">♫</button>
     <div class="bar" aria-hidden="true"><i id="barfill"></i></div>
     <button class="circ" id="next" aria-label="Next memory"><span>Next</span><span class="arrow" aria-hidden="true">›</span></button>
@@ -270,14 +269,11 @@ if(!reduce&&matchMedia('(pointer:fine)').matches){
 /* gentle autoplay (off with reduced motion; pauses on touch, focus and hidden tab) */
 let auto=null, playing=!reduce;
 function tick(){ if(i>=N-1){pause();return} go(i+1) }
-function start(){ clearInterval(auto); if(playing&&!reduce&&!gal.hidden) auto=setInterval(tick,9000); setPlayUI() }
+function start(){ clearInterval(auto); if(playing&&!reduce&&!gal.hidden) auto=setInterval(tick,9000) }
 function pause(){ clearInterval(auto); auto=null }
 function restart(){ if(playing) start() }
-function setPlayUI(){ $('#play').textContent=playing?'❚❚':'▶'; $('#play').setAttribute('aria-label',playing?'Pause slideshow':'Play slideshow') }
-$('#play').addEventListener('click',()=>{playing=!playing; playing?start():pause(); setPlayUI()});
 document.addEventListener('visibilitychange',()=>{document.hidden?pause():restart()});
 vp.addEventListener('mouseenter',pause); vp.addEventListener('mouseleave',restart);
-setPlayUI();
 
 /* transitions between screens */
 function enter(e){
